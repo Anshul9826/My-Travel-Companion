@@ -1,0 +1,44 @@
+.navbar {
+  background: rgba(0, 255, 0, 0.6);
+  box-shadow: 2px 2px 5px 1px rgba(0, 255, 0, 0.6);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(0, 255, 0, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navItems {
+  margin: 5px 10px;
+  padding: 10px 10px;
+}
+.navItems:hover {
+  cursor: pointer;
+  background-color: rgba(0, 255, 0, 0.6);
+  color: black;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+.Btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background-color: rgba(0, 255, 0, 0.9);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.Btn:hover {
+  transition: 0.25s ease-in-out;
+  background-color: rgba(0, 255, 0, 0.4);
+  color: green;
+}
