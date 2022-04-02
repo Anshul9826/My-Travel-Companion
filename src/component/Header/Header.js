@@ -1,42 +1,50 @@
 import React from "react";
 import "./Header.css";
-//import { Autocomplete } from "@react-google-maps/api";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
-import LoginIcon from "@mui/icons-material/Login";
+import Login from "../Forms/Login";
+import SignUp from "../Forms/SignUp";
+
+const style = {
+  border: "none",
+  boxShadow: "none",
+  fontSize: "1.5rem",
+};
+const navStyle = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  right: 0,
+  zIndex: 999,
+};
 
 function Header({ logo }) {
+  
   return (
-    <Navbar bg="light" variant="light" expand="lg">
-      <Container fluid>
+    <Navbar expand="md" style={navStyle}>
+      <Container>
         <Navbar.Brand>
           <Link to="/">
-            <img src={logo} alt="logo" width={150} />
+            <img src={logo} alt="logo" width={130} />
           </Link>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style={style} />
         <Navbar.Collapse id="basic-navbar-nav">
-          <SearchBar />
-          <Nav className="ms-auto">
+          <Nav className="m-auto">
             <Link className="navItems" to="/">
               Home
             </Link>
             <Link className="navItems" to="/about">
               About
             </Link>
-            <div className="headerRight">
-              <Link className="Btn" to="/login">
-                <LoginIcon fontSize="large" style={{ color: "green" }} />
-                <h6 className="ms-2 mb-0">Login</h6>
-              </Link>
-              <Link className="Btn" to="/signup">
-                <PersonAddIcon fontSize="large" style={{ color: "green" }} />
-                <h6 className="ms-2 mb-0">Sign Up</h6>
-              </Link>
-            </div>
+            <Link className="navItems" to="/about">
+              Services
+            </Link>
           </Nav>
+          <div className="headerRight">
+            <Login logo={logo} Btn={"Btn"}/>
+            <SignUp logo={logo} Btn={"Btn Btn-Secondary"} />
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

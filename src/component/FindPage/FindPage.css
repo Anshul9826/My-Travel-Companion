@@ -1,0 +1,11 @@
+.findContainer {
+  background: linear-gradient(0deg, #0b4870, #0b4870),
+    linear-gradient(
+      299.82deg,
+      rgba(0, 234, 113, 0.4) 9.68%,
+      rgba(0, 151, 255, 0.7) 48.53%,
+      rgba(0, 234, 113, 0.4) 91.84%
+    );
+  background-blend-mode: normal, color-burn;
+  color: white;
+}

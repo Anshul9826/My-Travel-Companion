@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Mogra&display=swap");
+.home {
+  background: linear-gradient(0deg, #0b4870, #0b4870),
+    linear-gradient(
+      299.82deg,
+      rgba(0, 234, 113, 0.4) 9.68%,
+      rgba(0, 151, 255, 0.7) 48.53%,
+      rgba(0, 234, 113, 0.4) 91.84%
+    );
+  background-blend-mode: normal, color-burn;
+}
+.home h1 {
+  font-family: "Mogra", cursive;
+}
+.home h4 {
+  font-family: "Kalam", cursive;
+}
+.heroSection {
+  display: flex;
+  height: 100vh;
+  padding-top: 100px;
+}
+.infoText {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 580px;
+  margin: auto;
+  padding: 20px;
+  color: white;
+}
+.heroSectionImg {
+  display: flex;
+  margin: auto;
+}
+.heroSectionImg img {
+  width: 550px;
+  height: auto;
+}
+.middleSection {
+  display: flex;
+  padding: 50px 0px;
+  background: linear-gradient(
+    179.18deg,
+    #6ca7e5 9.36%,
+    rgba(108, 167, 229, 0) 93.37%
+  );
+  border-radius: 80px 80px 0px 0px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+}
+.middleText {
+  color: white;
+}
+.middleSectionImg {
+  margin: auto;
+}
+.middleSectionImg img {
+  width: 550px;
+}
+
+@media (max-width: 992px) {
+  .heroSection {
+    flex-direction: column;
+    height: auto;
+  }
+  .middleSection {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .heroSectionImg img {
+    width: 400px;
+  }
+  .middleSectionImg img {
+    width: 400px;
+  }
+  .infoText {
+    padding: 25px;
+    width: 350px;
+  }
+  .home h1 {
+    font-size: 1.5em;
+  }
+  .home h4 {
+    font-size: 1.15em;
+  }
+  .Btn-large {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 400px) {
+  .heroSectionImg img {
+    width: 250px;
+  }
+  .middleSectionImg img {
+    width: 250px;
+  }
+  .infoText {
+    width: 250px;
+  }
+}
+
+/* Animation  here */
+
+/* .fade-in {
+  opacity: 0;
+  transition: opacity 450ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+} */
